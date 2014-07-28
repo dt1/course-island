@@ -1,0 +1,147 @@
+body, html{
+    margin:0px;
+    width:100%;
+}
+
+p{
+    color:black;
+    line-height: 1.25em;
+}
+
+.top-bar{
+    position:fixed;
+    background-color:white;
+    top:0;
+    margin:auto;
+    left:0;
+    right:0;
+    z-index:1;
+    width:100%;
+}
+
+.bump-down{
+    height:50px;
+}
+
+.bottom-div{
+    height:100px;
+}
+
+.ocw-review{
+    margin-bottom: 10px;
+}
+
+.course-image{
+    margin-bottom: 10px;
+}
+
+h2{
+    color: #000099;
+}
+
+.nav-section{
+    background-color: black;
+    border-style: outset;
+    height: 30px;
+    margin: 3px 0px 3px 0px;
+}
+
+.nav-section a{
+    color:yellow;
+    padding: 3px;
+}
+
+p, h1, h2{
+    line-height: 1;
+}
+
+
+a{
+    color:blue;
+}
+
+a:visited{
+    color: blue;
+}
+
+h1 a{
+    color:black;
+}
+
+h1 a:visited{
+    color:black;
+}
+
+.top-bar a:visited{
+    color: blue;
+}
+
+header a{
+    margin-left: 30px;
+}
+
+.prereq-cols{
+    -moz-column-count:2;
+    -moz-column-gap:1px;
+}
+
+.prereq-ops{
+    word-wrap:normal;
+    line-height:10px;
+}
+
+
+.course-list-div,
+.user-comment-list{
+    border-bottom: 3px double black;
+}
+
+.course-list-image{
+    margin-top: 15px;
+}
+
+.home-anchor:hover{
+    background-color:#BBB;
+    background: linear-gradient(to bottom right, gray, white);
+}
+
+.mooc-page-list-image{
+    height:100px;
+}
+
+.course-image{
+    height:200px;
+}
+
+.nr-anchors{
+    margin-left: 3em;
+}
+
+.profile-div-border{
+    /* border: 1px solid gray; */
+    height: 12em;
+    width: 15em;
+}
+
+ul, ol, blockquote, pre {
+    margin-left: 7%;
+}
+
+code {
+    color: black;
+    font-weight: normal;
+    font-family: monospace;
+    font-size: 1.25em;
+}
+
+blockquote{
+    color: black;
+}
+
+.red {
+    color: red;
+}
+
+input.px300 {
+    width: 300px;
+}

@@ -1,0 +1,500 @@
+aa
+(use 'mr.handler)
+prereq-to-database
+prereqs
+(use 'mr.handler)
+(use prereq-to-database "joejoe" "Coursera" "url" "Social Pyschology" aa)
+aa
+(def aa {"Coursera-Building an Information Risk Management Toolkit" "Coursera-Building an Information Risk Management Toolkit", "Coursera-Antimicrobial Stewardship: Optimization of Antibiotic Practices" "Coursera-Antimicrobial Stewardship: Optimization of Antibiotic Practices", "Coursera-Animal Behaviour" "Coursera-Animal Behaviour"})
+(prereq-to-database "joejoe" "Coursera" "url" "Social Pyschology" aa)
+prereq-to-database
+(use prereq-to-database "joejoe" "Coursera" "Social Pyschology" aa)
+aa
+(clojure.string/split aa #"-")
+aa
+(for [v aa] (split v #"-"))
+(for [v aa] (clojure.string/split v #"-"))
+(for [[v] aa] (clojure.string/split v #"-"))
+(doseq [[v] aa] (clojure.string/split v #"-"))
+(for [[v] aa] (clojure.string/split v #"-") (if (= (v 0) "Coursera") (print v)))
+(use 'postal.core)
+(send-message {:from "do-not-reply@courseisland.com"
+:to "dbtoomey@gmail.com"
+:subject "test from ci"
+:body "message"})
+(in-ns 'postal.core)
+(send-message {:from "do-not-reply@courseisland.com"
+               :to "dbtoomey@gmail.com"
+               :subject "test ci"
+               :body "test-text"})
+(.send "dbtoomey@gmail.com")
+(send-message {:from "do-not-reply@courseisland.com"
+               :to "dbtoomey@gmail.com"
+               :subject "test ci"
+               :body "test-text"})
+(use 'postal.core)
+(send-message {:from "do-not-reply@courseisland.com"
+               :to "dbtoomey@gmail.com"
+               :subject "test ci"
+               :body "test-text"})
+(send-message {:from "do-not-reply@courseisland.com"
+               :to "dbtoomey@gmail.com"
+               :subject "test ci"
+               :body "test-text"})
+(send-message {:from "do-not-reply@courseisland.com"
+               :to "dbtoomey@gmail.com"
+               :subject "test ci"
+               :body "test-text"})
+(in-ns 'postal.core)
+(send-message {:from "do-not-reply@courseisland.com"
+               :to "dbtoomey@gmail.com"
+               :subject "test ci"
+               :body "test-text"})
+(send-message {:from "dbtoomey@gmail.com"
+               :to "dbtoomey@gmail.com"
+               :subject "test ci"
+               :body "test-text"})
+(send-message {:from "do-not-reply@courseisland.com"
+               :to "dbtoomey@gmail.com"
+               :subject "test ci"
+               :body "test-text"})
+(send-message {:from "do-not-reply@courseisland.com"
+               :to "dbtoomey@gmail.com"
+               :subject "test ci"
+               :body "test-text"})
+(send-message {:from "mail@courseisland.com"
+               :to "dbtoomey@gmail.com"
+               :subject "test ci"
+               :body "test-text"})
+(use 'postal.core)
+(send-message {:from "mail@courseisland.com"
+               :to "dbtoomey@gmail.com"
+               :subject "test ci"
+               :body "test-text"})
+(in-ns 'postal.core)
+(send-message {:from "mail@courseisland.com"
+               :to "dbtoomey@gmail.com"
+               :subject "test ci"
+               :body "test-text"})
+(send-message {:from "mail@courseisland.com"
+               :to "dbtoomey@gmail.com"
+               :subject "test ci"
+               :body "test-text"})
+(use 'postal.core)
+(send-message {:from "mail@courseisland.com"
+               :to "dbtoomey@gmail.com"
+               :subject "test ci"
+               :body "test-text"})
+(def aa "EdX||Foundations of Computer Graphics")
+aa
+(prereq-to-database "joejoe" "Coursera" "intro" aa)
+(prereq-to-database "joejoe" "Coursera" "coursera" "intro" aa)
+(def aa ["EdX||Foundations of Computer Graphics"])
+(prereq-to-database "joejoe" "Coursera" "coursera" "intro" aa)
+(clojure.string/split aa #"||")
+(def aa "EdX||Foundations of Computer Graphics")
+(clojure.string/split aa #"||")
+(def aa "EdX--Foundations of Computer Graphics")
+(clojure.string/split aa #"||")
+(clojure.string/split aa #"--")
+(use 'models.db)
+main
+(use 'handler)
+create-cookie-url
+(create-cookie-url)
+(sanitize-user-string "adbkdk")
+(sanitize-user-string "adbkd>>>>>k")
+(use 'models.db)
+(use 'cpages)
+(use 'src.models.db)
+courses
+(db/courses)
+db/courses
+db/coursenamelookup
+(use 'korma.db 'korma.core)
+ls
+(use 'models.db)
+(use 'src.models.db0
+)
+(use 'src.models.db)
+(def cnl db/coursenamelookup)
+cnl
+(def cc db/courses)
+(join cnl cc)
+(db/
+(use 'korma.core 'korma.db)
+(def cnl db/coursenamelookup)
+cnl
+(select cnl)
+(def cc db/courses)
+cnl
+cc
+(select cnl (with cc))
+cc
+cnl
+(select cc * 
+        (join cnl (and (= cnl.site site)
+                       (= cnl.site site))))
+(select cc * 
+        (join cnl (and (= :cnl.site :site)
+                       (= :cnl.site :site))))
+prereq-to-database
+(prereq-to-database "handle" "coursera" "java")
+(def aa {:coursera--animal-behaviour "coursera--animal-behaviour", :edx--college-writing-2-1x "edx--college-writing-2-1x", :khan-academy--differential-equations "khan-academy--differential-equations"})
+aa
+(prereq-to-database "suser" "site-url" "class-url" aa)
+aa
+(doseq [[v] aa)
+(doseq [[v] aa] v)
+(doseq [[v] aa] (print v))
+  (doseq [[v] args]
+    (let [sc-vec (clojure.string/split v #"--")]
+      ;; (cond (= (sc-vec 0) "Coursera")
+      ;;       (db/add-prereq suser course site class-url (sc-vec 1) "Coursera")
+            
+      ;;       (= (sc-vec 0) "Khan Academy")
+      ;;       (db/add-prereq suser course site class-url (sc-vec 1) "Khan Academy")
+            
+      ;;       (= (sc-vec 0) "Codecademy")
+      ;;       (db/add-prereq suser course site class-url (sc-vec 1) "Codecademy")
+            
+      ;;       (= (sc-vec 0) "Udacity")
+      ;;       (db/add-prereq suser course site class-url (sc-vec 1) "Udacity")
+            
+      ;;       (= (sc-vec 0) "EdX")
+      ;;       (db/add-prereq suser course site class-url (sc-vec 1) "EdX"))
+      (db/add-prereq site-url class-url suser (sc-vec 0) (sc-vec 1)))
+)
+(def args {:coursera--animal-behaviour "coursera--animal-behaviour", :edx--college-writing-2-1x "edx--college-writing-2-1x", :khan-academy--differential-equations "khan-academy--differential-equations"})
+(def suser "hal")
+(def site-url "site")
+(def class-url "url")
+  (doseq [[v] args]
+    (let [sc-vec (clojure.string/split v #"--")]
+      ;; (cond (= (sc-vec 0) "Coursera")
+      ;;       (db/add-prereq suser course site class-url (sc-vec 1) "Coursera")
+            
+      ;;       (= (sc-vec 0) "Khan Academy")
+      ;;       (db/add-prereq suser course site class-url (sc-vec 1) "Khan Academy")
+            
+      ;;       (= (sc-vec 0) "Codecademy")
+      ;;       (db/add-prereq suser course site class-url (sc-vec 1) "Codecademy")
+            
+      ;;       (= (sc-vec 0) "Udacity")
+      ;;       (db/add-prereq suser course site class-url (sc-vec 1) "Udacity")
+            
+      ;;       (= (sc-vec 0) "EdX")
+      ;;       (db/add-prereq suser course site class-url (sc-vec 1) "EdX"))
+      (db/add-prereq site-url class-url suser (sc-vec 0) (sc-vec 1))
+))
+(doseq [[v] args] v)
+(doseq [[v] args] (print v))
+(for [[v] args] v)
+(for [[v] args] (clojure.string/split v #"--"))
+args
+(for [{v} args] v)
+(doseq [{v} args] v)
+args
+(doseq [[v] args] v)
+(doseq [v args] v)
+(doseq [:v args] v)
+(doseq args)
+args
+(doseq [[k v] args] k)
+(doseq [[k v] args] v)
+args
+(doseq [{k v} args] v)
+args
+(doseq [[v] args] (print v))
+(doseq [[k v] args] (print v))
+(doseq [[k v] args] v)
+(doseq [[k v] args] (clojure/string.split v #"--"))
+(doseq [[k v] args] (clojure.string/split v #"--"))
+(doseq [[k v] args] (clojure.string/split k #"--"))
+(use 'models.db)
+(in-ns 'models.db)
+add-prereq
+(in-ns 'src.models.db)
+add-prereq
+(in-ns 'handler)
+db/prereqs
+(select db/prereqs)
+(use 'korma.core 'korma.db)
+(select db/prereqs)
+(select db/prereqs
+        (join db/coursenamelookup
+              (and (= :coursenamelookup.site :site)
+                   (= :coursenamelookup.url :url))))
+(select db/prereqs
+        (fields :site :url :coursenamelookup.coursename)
+        (join db/coursenamelookup
+              (and (= :coursenamelookup.site :site)
+                   (= :coursenamelookup.url :url))))
+(use 'models.db)
+(use 'db)
+(use 'models.db)
+(use 'sitereviews)
+ls
+dir
+(use 'models.db)
+(requre 'mooc-home)
+(in-ns 'models.db)
+ls
+get-site-reviews
+(get-site-reviews)
+(in-ns 'models.db)
+ls
+dir
+get-site-reviews
+lein help
+(use 'mo
+(use 'm
+(use 'db)
+(use 'models.db)
+(use 'src.models.db)
+ls
+(in-ns 'models.db)
+get-site-reviews
+(use :reload-all mr.core)
+(use 'mr.core)
+(in-ns 'mr.core)
+(use 'mr.models.db)
+get-site-reviews
+(get-site-reviews "codecademy")
+sitereviews
+(select sitereviews)
+(use 'korma.core 'korma.db)
+(select sitereviews)
+(get-site-reviews "codecademy")
+(get-site-reviews "Codecademy")
+(use 'mr.models.db)
+(use 'korma.core 'korma.db)
+(get-site-reviews "codecademy")
+(get-site-reviews "Codecademy")
+(select sitereviews)
+books
+comentreplies
+commentreplies
+suggestedbooks
+(use 'mr.models.db)
+sitereviews
+(get-site-reviews "edx")
+(get-site-reviews "codecademy")
+(use 'mr.models.db)
+(use 'korma.core 'korma.db)
+sitereviews
+(get-site-reviews "codecademy")
+(use 'mr.models.db)
+(use 'korma.db 'korma.core)
+suggetedbooks
+suggestedbooks
+get-suggested-books
+(get-suggested-books "coursera" "algorithms-one")
+(select suggestedbooks *
+        (where {:site "coursera"
+                :url "algorithms-one"}))
+(select suggestedbooks 
+        (fields bookurl)
+        (where {:site "coursera"
+                :url "algorithms-one"}))
+(select suggestedbooks 
+        (fields :bookurl)
+        (where {:site "coursera"
+                :url "algorithms-one"}))
+(def random (java.util.Random))
+(java.util.Random)
+java.util.Random
+rand
+(defn random-char [] 
+(random-nth "ABCD"))
+random-nth
+random
+(random nth "ABC")
+(random "ABC")
+random
+(random 5)
+(defn random-string [length]
+(let [ascii-codes (concat (range 48 58) (range 66 91) (range 97 123))]
+)
+random-string
+(random-string 6)
+(def aa (random-string 6))
+aa
+(def VALID-CHARS
+(map char (concat (range 48 58) ; 0-9
+(range 66 91) ; A-Z
+(range 97 123)))) ; a-z
+(defn random-char []
+(nth VALID-CHARS (rand (count VALID-CHARS))))
+(defn random-str [length]
+(apply str (take length (repeatedly random-char)))) 
+VALID-CHARS
+(random-char)
+(random-str 6)
+(use 'korma.db 'korma.core)
+(defn get-search-query [course-query]
+  (exec-raw [
+"select cs.site, cs.url, cnl.coursename
+from courses cs
+inner join coursenamelookup cnl
+on cs.site = cnl.site 
+and cs.url = cnl.url
+where [course-query] @@ coursename;"]))
+(get-search-query "dynamic")
+(defn get-search-query [course-query]
+  (exec-raw [
+"select cs.site, cs.url, cnl.coursename
+from courses cs
+inner join coursenamelookup cnl
+on cs.site = cnl.site 
+and cs.url = cnl.url
+where ? @@ coursename;" [course-query]]))
+(get-search-query "dynamic")
+(defn get-search-query [course-query]
+  (exec-raw [
+"select cs.site, cs.url, cnl.coursename
+from courses cs
+inner join coursenamelookup cnl
+on cs.site = cnl.site 
+and cs.url = cnl.url
+where ? @@ coursename;" [course-query]] :results))
+(get-search-query "dynamic")
+(defn get-search-query [course-query]
+  (exec-raw [
+"select cs.site, cs.url, cnl.coursename
+from courses cs
+inner join coursenamelookup cnl
+on cs.site = cnl.site 
+and cs.url = cnl.url
+where to_tsquery(?) @@ to_tsvector(coursename);" [course-query]] :results))
+(get-search-query "dynamic")
+(use 'mr.models.db)
+(use 'korma.db 'korma.core)
+ls
+aggregate
+(select comments (aggregate (max :cid)))
+(select comments (aggregate (max :cid) :cid))
+(let [{cid :cid} (select comments (aggregate (max :cid) :cid))] cid)
+(let [[{cid :cid}] (select comments (aggregate (max :cid) :cid))] cid)
+(let [[{cid :cid}] (select comments (aggregate (max :cid) :cid) (where {:handle "joejoe"}))] cid)
+(defn get-comments2 [site-url class-url]
+  (select comments 
+          (fields :commentpaths.ancestor :commentpaths.descendant 
+                  :comments.handle :comments.title :comments.comment)
+          (join commentpaths (= :comments.cid :commentpaths.descendant))
+          (where {:site site-url
+                  :url class-url})))
+(get-comments2 "coursera" "infosec-strategies")
+(def aa (get-comments2 "coursera" "infosec-strategies"))
+aa
+(for [i aa] i)
+(for [a aa] 
+  :let [anc (:ancestor a)]
+  anc)(for [a aa] 
+  :let [anc (:ancestor a)]
+  anc)
+(for [a aa] 
+  :let [anc (:ancestor a)]
+  anc)
+(for [a aa 
+      :let [anc (:ancestor a)]]
+  anc)
+(for [a aa 
+      :let [anc (:ancestor a)
+            desc (:descendant a)]]
+  (if (= anc des)
+    (:title a)))
+(for [a aa 
+      :let [anc (:ancestor a)
+            desc (:descendant a)]]
+  (if (= anc desc)
+    (:title a)))
+(defn get-comments2 [site-url class-url]
+  (select comments 
+          (fields :commentpaths.ancestor :commentpaths.descendant 
+                  :comments.handle :comments.title :comments.comment
+                  :comments.cdate :users.avatar)
+          (join commentpaths (= :comments.cid :commentpaths.descendant))
+          (where {:site site-url
+                  :url class-url})
+          (join users (= :users.handle :comments.handle))))
+(get-comments-2 "coursera" "infosec-strategies")
+(get-comments2 "coursera" "infosec-strategies")
+(defn get-comment-replies [site-url class-url comment-id]
+  (select comments 
+          (fields :comments.cid :commentpaths.ancestor 
+                  :commentpaths.descendant 
+                  :comments.handle :comments.title :comments.comment
+                  :comments.cdate :users.avatar)
+          (join commentpaths (= :comments.cid :commentpaths.descendant))
+          (where (and  {:site site-url
+                        :url class-url}
+                       (not= :commentpaths.ancestor 
+                             :commentpaths.descendant)))
+          (join users (= :users.handle :comments.handle))
+          (order :commentpaths.descendant :DESC)))
+(use 'korma.core 'korma.db)
+(defn get-comment-replies [site-url class-url comment-id]
+  (select comments 
+          (fields :comments.cid :commentpaths.ancestor 
+                  :commentpaths.descendant 
+                  :comments.handle :comments.title :comments.comment
+                  :comments.cdate :users.avatar)
+          (join commentpaths (= :comments.cid :commentpaths.descendant))
+          (where (and  {:site site-url
+                        :url class-url}
+                       (not= :commentpaths.ancestor 
+                             :commentpaths.descendant)))
+          (join users (= :users.handle :comments.handle))
+          (order :commentpaths.descendant :DESC)))
+(use 'mr.models.db)
+(defn get-comment-replies [site-url class-url comment-id]
+  (select comments 
+          (fields :comments.cid :commentpaths.ancestor 
+                  :commentpaths.descendant 
+                  :comments.handle :comments.title :comments.comment
+                  :comments.cdate :users.avatar)
+          (join commentpaths (= :comments.cid :commentpaths.descendant))
+          (where (and  {:site site-url
+                        :url class-url}
+                       (not= :commentpaths.ancestor 
+                             :commentpaths.descendant)))
+          (join users (= :users.handle :comments.handle))
+          (order :commentpaths.descendant :DESC)))
+(get-comment-replies "coursera" "infosec-strategies" 32)
+(sql-only (defn get-course-list [site-url]
+  (select courses
+          (fields :prof :startdate :timelength :smallimage :imagealt
+                  :url :coursenamelookup.coursename)
+                    (join coursenamelookup 
+                          (and (= :coursenamelookup.site :site)
+                               (= :coursenamelookup.url :url)))
+                    (where {:site site-url})
+                    (order :startdate :DESC))))
+(sql-only get-course-list "coursera")
+(sql-only get-course-list)
+(sql-only get-course-list "edx")
+(sql-only 
+  (select courses
+          (fields :site
+                  :coursename :url :prof :startdate :timelength :image
+                  :imagealt :officialpage :description :bullet1 :bullet2
+                  :bullet3 :bullet4 :bullet5 :bullet6 :bullet7 :bullet8
+                  :bullet9 :bullet10 :bullet11 :bullet12 :bullet13 :bullet14
+                  :bullet15 :bullet16 :suggestedaudience :cireviews.review
+                  :cireviews.reviewer)
+          (join coursenamelookup (and (= :coursenamelookup.site :site)
+                                      (= :coursenamelookup.url :url)))
+          (join cireviews (and (= :cireviews.site :site)
+                                   (= :cireviews.url :url)))))
+(use 'mr.cpages)
+(db/get-book-info)
+(db/get-book-info "all-about-hedge-funds")
+(for [a 5] a)
+(for [a (count 5)] a)
+(var aa (db/get-book-info "all-about-hedge-funds"))
+(def aa (db/get-book-info "all-about-hedge-funds"))
+aa
+(count aa)
+(for [a (count aa)] a)
+(for [a (range (count aa))] a)
