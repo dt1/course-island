@@ -2,7 +2,7 @@
 
 Course Island is a website I built a while ago using Clojure, PostgreSQL, and Foundation CSS. 
 
-[Course Island](http://courseisland.com)
+[Course Island](http://192.241.194.172:3001/)
 
 ## Running
 
